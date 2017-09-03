@@ -16,4 +16,6 @@ class TheHindu(BaseSpider):
 	def parse_news(self, response):
 		sel = Selector(response)
 		title = sel.xpath('//div[@class="article"]/h1[@class="title"]/text()').extract()
+		print title
+		
 		
